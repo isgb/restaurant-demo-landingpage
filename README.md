@@ -9,10 +9,10 @@ Landing page moderna y responsiva para un restaurante, diseñada para mejorar la
 - 📱 Diseño completamente responsivo (mobile-first)
 - 🍔 Sección de menú con imágenes, descripciones y precios
 - 📍 Integración de ubicación mediante Google Maps
-- ⏰ Horarios de atención visibles
-- 📞 Botón de contacto directo (WhatsApp / teléfono)
+- ⏰ Horarios de atención
+- 📞 Botón de contacto directo
 - 🎨 Interfaz moderna utilizando Bootstrap
-- ⚡ Navegación fluida y experiencia de usuario optimizada
+- ⚡ Navegación fluida y estructura clara
 
 ---
 
@@ -21,8 +21,29 @@ Landing page moderna y responsiva para un restaurante, diseñada para mejorar la
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap 5
+- Bootstrap
 
 ---
 
 ## 📁 Estructura del proyecto
+proyecto-restaurant/
+│
+├── index.html
+├── LICENSE
+├── README.md
+│
+├── css/
+│ ├── bootstrap.css
+│ ├── responsive.css
+│ └── styles.css
+│
+├── js/
+│ ├── bootstrap.bundle.min.js
+│ └── script.js
+│
+├── img/
+│ └── (imágenes del sitio: platillos, hero, etc.)
+│
+└── assets/
+└── img/
+└── restaurant.png
