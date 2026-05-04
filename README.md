@@ -25,25 +25,20 @@ Landing page moderna y responsiva para un restaurante, diseñada para mejorar la
 
 ---
 
-## 📁 Estructura del proyecto
-proyecto-restaurant/
-│
-├── index.html
-├── LICENSE
-├── README.md
-│
-├── css/
-│ ├── bootstrap.css
-│ ├── responsive.css
-│ └── styles.css
-│
-├── js/
-│ ├── bootstrap.bundle.min.js
-│ └── script.js
-│
-├── img/
-│ └── (imágenes del sitio: platillos, hero, etc.)
-│
-└── assets/
-└── img/
-└── restaurant.png
+
+---
+
+## 🎯 Objetivo del proyecto
+
+Este proyecto fue desarrollado como una demostración de cómo una página web puede ayudar a un restaurante a:
+
+- Mejorar su visibilidad en internet  
+- Mostrar su menú de forma atractiva  
+- Facilitar el contacto con clientes  
+- Generar una mejor imagen profesional  
+
+---
+
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la licencia MIT.
