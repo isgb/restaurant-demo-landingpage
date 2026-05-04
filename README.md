@@ -25,9 +25,6 @@ Landing page moderna y responsiva para un restaurante, diseñada para mejorar la
 
 ---
 
-
----
-
 ## 🎯 Objetivo del proyecto
 
 Este proyecto fue desarrollado como una demostración de cómo una página web puede ayudar a un restaurante a:
