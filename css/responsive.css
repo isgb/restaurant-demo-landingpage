@@ -1,0 +1,81 @@
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (min-width: 768px) {
+    .ul-navbar-nav {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem !important;
+    }
+
+    .section-title {
+        font-size: 2rem !important;
+    }
+
+    .hours-time {
+        font-size: 1.5rem !important;
+    }
+
+    .contact-card {
+        margin-bottom: 20px;
+    }
+
+    .map-container iframe {
+        height: 300px !important;
+    }
+
+    .ul-navbar-nav {
+       align-items: center ;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem !important;
+    }
+
+    .section-title {
+        font-size: 1.5rem !important;
+    }
+
+    .display-3 {
+        font-size: 1.8rem !important;
+    }
+
+    .display-5 {
+        font-size: 1.5rem !important;
+    }
+
+    .display-6 {
+        font-size: 1.2rem !important;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .map-container iframe {
+        height: 250px !important;
+    }
+
+    .ul-navbar-nav {
+       align-items: center ;
+    }
+}

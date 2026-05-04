@@ -1,0 +1,380 @@
+/* ============================================
+   CUSTOM CSS - SABOR MEXICANO
+   Bootstrap 5 Theme Enhancement
+   ============================================ */
+
+:root {
+    --primary-color: #c41e3a;
+    --secondary-color: #ff6b35;
+    --dark-brown: #2c1810;
+    --light-brown: #8b4513;
+    --cream: #f5f1e8;
+}
+
+/* ============================================
+   GENERAL STYLES
+   ============================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ============================================
+   NAVBAR CUSTOMIZATION
+   ============================================ */
+
+.navbar {
+    background: linear-gradient(90deg, var(--dark-brown) 0%, #3d2417 100%) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: var(--secondary-color) !important;
+    font-size: 1.3rem;
+}
+
+.brand-icon {
+    margin-right: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero-section {
+    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--light-brown) 100%);
+    color: white;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.hero-title {
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeInLeft 1s ease;
+}
+
+.hero-subtitle {
+    color: #f5f1e8;
+    font-weight: 600;
+    animation: fadeInLeft 1s ease 0.2s both;
+}
+
+.hero-text {
+    color: #e8e8e8;
+    animation: fadeInLeft 1s ease 0.4s both;
+}
+
+.hero-image {
+    animation: fadeInRight 1s ease;
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+    transform: translateY(-10px);
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* ============================================
+   MENU SECTION
+   ============================================ */
+
+.menu-section {
+    background-color: var(--cream);
+}
+
+.section-title {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: #999 !important;
+}
+
+.menu-card {
+    transition: all 0.3s ease !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.menu-card:nth-child(1) { animation-delay: 0.1s; }
+.menu-card:nth-child(2) { animation-delay: 0.2s; }
+.menu-card:nth-child(3) { animation-delay: 0.3s; }
+.menu-card:nth-child(4) { animation-delay: 0.4s; }
+.menu-card:nth-child(5) { animation-delay: 0.5s; }
+.menu-card:nth-child(6) { animation-delay: 0.6s; }
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(196, 30, 58, 0.2) !important;
+}
+
+.menu-card img {
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    height: 250px;
+}
+
+.menu-card:hover img {
+    transform: scale(1.1);
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
+.about-section {
+    background-color: #f8f9fa;
+}
+
+.feature-card {
+    transition: all 0.3s ease !important;
+    border: 1px solid #e9ecef;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(196, 30, 58, 0.15) !important;
+}
+
+.feature-icon {
+    display: inline-block;
+}
+
+/* ============================================
+   HOURS SECTION
+   ============================================ */
+
+.hours-section {
+    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--light-brown) 100%);
+    color: white;
+}
+
+.hours-section .section-title {
+    color: var(--secondary-color) !important;
+}
+
+.hours-section .section-subtitle {
+    color: #e8e8e8 !important;
+}
+
+.hours-card {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 2px solid var(--secondary-color) !important;
+    transition: all 0.3s ease !important;
+    animation: fadeInUp 0.6s ease;
+}
+
+.hours-card:hover {
+    background-color: rgba(255, 107, 53, 0.2) !important;
+    transform: translateY(-5px);
+}
+
+.hours-card h4 {
+    color: var(--secondary-color);
+}
+
+.hours-time {
+    color: #f5f1e8;
+}
+
+/* ============================================
+   LOCATION SECTION
+   ============================================ */
+
+.location-section {
+    background-color: #f8f9fa;
+}
+
+.map-container {
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.map-container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+.contact-section {
+    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--light-brown) 100%);
+}
+
+.contact-section .section-title {
+    color: var(--secondary-color) !important;
+}
+
+.contact-section .section-subtitle {
+    color: #e8e8e8 !important;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.9) 0%, rgba(196, 30, 58, 0.9) 100%) !important;
+    transition: all 0.3s ease !important;
+    animation: fadeInUp 0.6s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+.contact-card .btn-light {
+    transition: all 0.3s ease;
+}
+
+.contact-card .btn-light:hover {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    border-color: var(--secondary-color) !important;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transition: all 0.3s ease !important;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1) rotate(10deg);
+}
+
+footer a:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.text-secondary-light {
+    color: #f5f1e8 !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.rounded-4 {
+    border-radius: 16px !important;
+}
+
+/* ============================================
+   SMOOTH TRANSITIONS
+   ============================================ */
+
+* {
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}

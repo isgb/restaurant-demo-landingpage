@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Mexicano - Auténtica Cocina Mexicana</title>
+    
+    <!-- Icon Sitie -->
+    <link rel="icon" href="assets/img/restaurant.png" type="image/png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-5" href="#top">
+                <span class="brand-icon">🌶️</span> Sabor Mexicano
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ul-navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hours">Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="hero" class="hero-section py-5 py-lg-6">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- Hero Content -->
+                <div class="col-lg-6 text-white">
+                    <h1 class="hero-title display-3 fw-bold mb-3">Sabor Mexicano</h1>
+                    <p class="hero-subtitle fs-4 mb-2 text-secondary-light">Disfruta el auténtico sabor en cada bocado</p>
+                    <p class="hero-text fs-5 mb-4 text-light">Experiencia culinaria tradicional con ingredientes frescos y auténticos</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-primary btn-lg" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+                            Ver menú
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" onclick="openWhatsApp()">
+                            Reservar ahora
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="col-lg-6">
+                    <img src="img/hero-image.avif" 
+                         alt="Comida Mexicana" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="section-title display-5 fw-bold mb-2">Nuestro Menú</h2>
+                <p class="section-subtitle fs-5 text-muted">Platillos auténticos preparados con amor</p>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="row g-4">
+                <!-- Dish 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <img src="img/tacos-pastor.avif" 
+                             class="card-img-top" alt="Tacos Al Pastor">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">Tacos Al Pastor</h5>
+                            <p class="card-text text-muted">Deliciosos tacos con carne marinada, piña y cebolla morada</p>
+                            <span class="badge bg-danger fs-6">$85 MXN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <img src="img/chiles-rellenos.jpg" 
+                             class="card-img-top" alt="Chiles Rellenos">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">Chiles Rellenos</h5>
+                            <p class="card-text text-muted">Chiles poblanos rellenos de queso Oaxaca con salsa roja casera</p>
+                            <span class="badge bg-danger fs-6">$120 MXN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <img src="img/enchiladas.avif" 
+                             class="card-img-top" alt="Enchiladas Verdes">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">Enchiladas Verdes</h5>
+                            <p class="card-text text-muted">Tortillas enrolladas con pollo, cubiertas en salsa verde y crema</p>
+                            <span class="badge bg-danger fs-6">$110 MXN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <img src="img/pozole-rojo.avif" 
+                             class="card-img-top" alt="Pozole Rojo">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">Pozole Rojo</h5>
+                            <p class="card-text text-muted">Caldo tradicional de cerdo con maíz cacahuazintle y especias</p>
+                            <span class="badge bg-danger fs-6">$95 MXN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <img src="img/guacamole-totopos.jpg" 
+                             class="card-img-top" alt="Guacamole con Totopos">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">Guacamole con Totopos</h5>
+                            <p class="card-text text-muted">Guacamole fresco hecho al momento con totopos crujientes</p>
+                            <span class="badge bg-danger fs-6">$65 MXN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <img src="img/flan-tradicional.jpg" 
+                             class="card-img-top" alt="Flan Tradicional">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">Flan Tradicional</h5>
+                            <p class="card-text text-muted">Postre clásico con caramelo y sabor a vainilla</p>
+                            <span class="badge bg-danger fs-6">$45 MXN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- About Text -->
+                <div class="col-lg-6">
+                    <h2 class="section-title display-5 fw-bold mb-4">Sobre Nosotros</h2>
+                    <p class="fs-5 mb-3">
+                        En <strong>Sabor Mexicano</strong>, llevamos más de 20 años ofreciendo la auténtica cocina mexicana a nuestros clientes. 
+                        Cada platillo es preparado con ingredientes frescos, seleccionados cuidadosamente y cocinados siguiendo recetas tradicionales.
+                    </p>
+                    <p class="fs-5 mb-4">
+                        Creemos que la comida es una experiencia cultural. Por eso, cada visita es una oportunidad para que disfrutes 
+                        no solo de sabores auténticos, sino de la calidez y hospitalidad mexicana.
+                    </p>
+                    
+                    <!-- Features -->
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="feature-card p-4 bg-white rounded-3 shadow-sm text-center">
+                                <div class="feature-icon fs-1 mb-3">🏆</div>
+                                <h5 class="fw-bold text-primary mb-2">Calidad Premium</h5>
+                                <p class="small text-muted">Ingredientes frescos y de la mejor calidad</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card p-4 bg-white rounded-3 shadow-sm text-center">
+                                <div class="feature-icon fs-1 mb-3">👨‍🍳</div>
+                                <h5 class="fw-bold text-primary mb-2">Chefs Expertos</h5>
+                                <p class="small text-muted">Preparación auténtica por maestros culinarios</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card p-4 bg-white rounded-3 shadow-sm text-center">
+                                <div class="feature-icon fs-1 mb-3">❤️</div>
+                                <h5 class="fw-bold text-primary mb-2">Tradición</h5>
+                                <p class="small text-muted">Recetas familiares transmitidas por generaciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Image -->
+                <div class="col-lg-6">
+                    <img src="img/sobre-nosotros.avif" 
+                         alt="Chef Preparando Comida" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOURS SECTION -->
+    <section id="hours" class="hours-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5 text-white">
+                <h2 class="section-title display-5 fw-bold mb-2">Horario de Atención</h2>
+                <p class="fs-5 text-light">Estamos abiertos para ti durante estos horarios</p>
+            </div>
+
+            <!-- Hours Grid -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="hours-card p-4 rounded-4 text-white border-0">
+                        <h4 class="fw-bold mb-3">Lunes a Viernes</h4>
+                        <p class="hours-time display-6 fw-bold mb-2">09:00 AM - 11:00 PM</p>
+                        <p class="text-light small">Servicio completo de comida y bebidas</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="hours-card p-4 rounded-4 text-white border-0">
+                        <h4 class="fw-bold mb-3">Sábado</h4>
+                        <p class="hours-time display-6 fw-bold mb-2">10:00 AM - 12:00 AM</p>
+                        <p class="text-light small">Servicio extendido con música en vivo</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="hours-card p-4 rounded-4 text-white border-0">
+                        <h4 class="fw-bold mb-3">Domingo</h4>
+                        <p class="hours-time display-6 fw-bold mb-2">10:00 AM - 10:00 PM</p>
+                        <p class="text-light small">Servicio familiar y descanso</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="fs-5 text-white">📍 <strong>Ubicados en el corazón de la ciudad, listos para recibirte</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section id="location" class="location-section py-5 bg-light">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="section-title display-5 fw-bold mb-2">Nuestra Ubicación</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Map -->
+                <div class="col-lg-7">
+                    <div class="map-container rounded-4 overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.7560857826847!2d-99.13320842346916!3d19.432608681870383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db7b73d7%3A0x9d7e0f5d6b6b7b7b!2sM%C3%A9xico%20City%2C%20CDMX!5e0!3m2!1ses!2smx!4v1234567890" 
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Location Info -->
+                <div class="col-lg-5">
+                    <div class="bg-white p-5 rounded-4 shadow-lg h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="fw-bold text-primary mb-4">📍 Dirección</h3>
+                            <p class="mb-1"><strong>Sabor Mexicano</strong></p>
+                            <p class="mb-1">Avenida Reforma 1234</p>
+                            <p class="mb-4">Ciudad de México, CDMX 06500</p>
+
+                            <h3 class="fw-bold text-primary mb-3">📞 Teléfono</h3>
+                            <p class="mb-4">
+                                <a href="tel:+525512345678" class="text-decoration-none text-secondary">
+                                    +52 55 1234 5678
+                                </a>
+                            </p>
+
+                            <h3 class="fw-bold text-primary mb-3">📧 Email</h3>
+                            <p>
+                                <a href="mailto:info@sabormexicano.com" class="text-decoration-none text-secondary">
+                                    info@sabormexicano.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5 text-white">
+                <h2 class="section-title display-5 fw-bold mb-2">Ponte en Contacto</h2>
+                <p class="fs-5 text-light">¿Preguntas o deseas hacer una reserva? ¡Contáctanos!</p>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="row g-4">
+                <!-- WhatsApp -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-card p-5 rounded-4 text-center text-white border-0 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="fs-1 mb-3">💬</div>
+                            <h3 class="fw-bold mb-3">WhatsApp</h3>
+                            <p class="mb-4">Mensajea directamente para reservas y consultas</p>
+                        </div>
+                        <button class="btn btn-light btn-lg fw-bold" onclick="openWhatsApp()">Abrir WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-card p-5 rounded-4 text-center text-white border-0 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="fs-1 mb-3">📞</div>
+                            <h3 class="fw-bold mb-3">Llamada Directa</h3>
+                            <p class="mb-4">Habla directamente con nuestro equipo</p>
+                        </div>
+                        <a href="tel:+525512345678" class="btn btn-light btn-lg fw-bold">Llamar Ahora</a>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact-card p-5 rounded-4 text-center text-white border-0 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="fs-1 mb-3">✉️</div>
+                            <h3 class="fw-bold mb-3">Email</h3>
+                            <p class="mb-4">Envía tus consultas por correo electrónico</p>
+                        </div>
+                        <a href="mailto:info@sabormexicano.com" class="btn btn-light btn-lg fw-bold">Enviar Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row mb-5">
+                <!-- Brand -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">🌶️ Sabor Mexicano</h5>
+                    <p class="text-white">Auténtica cocina mexicana desde 2003</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4 mb-md-0 quick-links">
+                    <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#menu" class="text-white text-decoration-none">Menú</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="#location" class="text-white text-decoration-none">Ubicación</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3 mb-4 mb-md-0 contact-info">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-white">
+                        <li>📞 +52 55 1234 5678</li>
+                        <li>📧 info@sabormexicano.com</li>
+                        <li>📍 Avenida Reforma 1234</li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-md-3 social-links">
+                    <h5 class="fw-bold mb-3">Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="social-icon text-white text-decoration-none fs-5">
+                            f
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon text-white text-decoration-none fs-5">
+                            📷
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon text-white text-decoration-none fs-5">
+                            𝕏
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-icon text-white text-decoration-none fs-5">
+                            ▶️
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <hr class="bg-secondary">
+            <div class="text-center text-white footer-bottom">
+                <p class="mb-2">&copy; 2024 Sabor Mexicano. Todos los derechos reservados.</p>
+                <p class="mb-0">Hecho con ❤️ para los amantes de la comida mexicana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS (includes Popper) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
